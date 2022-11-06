@@ -1,0 +1,136 @@
+.bg-dark{
+    background-color: #2add12!important;
+}
+
+.float{
+    float: right!important;
+}
+
+.container {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    font-size: 25px;
+  }
+  
+  .container input {
+    visibility: hidden;
+    cursor: pointer;
+  }
+  
+  .mark {
+    border-radius: 5px;
+    border: #dd2424 2px solid;
+    position: absolute;
+    margin-top: 15px;
+     
+    height: 25px;
+    width: 25px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 4px 8px 0 rgba(51, 16, 206, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);   
+  }
+  
+  .container:hover input ~ .mark {
+    background-color: lightgray;
+  }
+  
+  .container input:checked ~ .mark {
+    background-color: rgb(80, 199, 51);
+  }
+  
+  .container input:disabled ~ .mark {
+    background-color: gray;
+  }
+
+  .mark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  
+  .container input:checked ~ .mark:after {
+    display: block;
+  }
+  
+  .container .mark:after {
+    left: 9px;
+    top: 5px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    transform: rotate(45deg);
+  }
+
+body{
+background-image: url("images/sticky.jpg");
+}
+  .section{
+    
+    padding: 30px;
+    margin: 60px;
+    border-radius: 15px;
+    box-shadow: 0 6px 20px 0 rgba(126, 133, 119, 0.801), 0 6px 20px 0 rgba(0, 0, 0, 0.705); 
+    background-image: url("images/back.jpg");
+
+  }
+   table, th {
+    border-radius:8px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    
+  }
+  th{
+    box-shadow: 0px 3px 0px 0px rgba(47, 209, 55, 0.205), 0 6px 0px 0 rgba(0, 0, 0, 0.705); 
+  }
+
+  table{
+    background-image: url("images/back.jpg");
+    padding: 10px !important;
+  }
+
+   th {  
+    border: 1px solid rgba(0, 0, 0, 0.2); 
+    text-align: left;
+  }
+
+.spacer{
+    padding: 0 !important;
+    height: 10px;
+    border-radius: 0 !important;
+    background: transparent !important;
+
+}
+  
+  table {
+   
+  
+    width: 100%;
+    border: 1px;
+    text-transform: capitalize;
+   
+  }
+  
+  th, td {
+    text-align: left;
+    padding: 8px;
+  }
+  
+  tr:not(.spacer){
+    background-color:rgb(255, 255, 255); 
+
+margin: 70px;
+overflow: hidden;
+}
+  
+  tr{
+    font-size: 14px;
+  }
+  tr:nth-child(1){
+    
+    height: 70px;
+    background-color: rgb(160, 57, 138);
+    color: white;
+    font-size: large;
+  }
